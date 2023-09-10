@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="20sp"
+        android:text="5,600.00"
+        android:textSize="48dp"
+        android:fontFamily="@font/manrope_extrabold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:id="@+id/topCard_1"
+        style="@style/card"
+        android:layout_marginRight="10sp"
+        android:background="#DAD6F5"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertGuide">
+        <TextView
+            style="@style/titleStyle"
+            android:text="Pay money"/>
+        <TextView
+            style="@style/descStyle"
+            android:layout_marginTop="12sp"
+            android:text="To wallet, bank or mobile number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/topCard_2"
+        style="@style/card"
+        android:layout_marginLeft="10sp"
+        android:background="#E9F4D1"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertGuide">
+        <TextView
+            style="@style/titleStyle"
+            android:text="Request money"/>
+        <TextView
+            style="@style/descStyle"
+            android:layout_marginTop="12sp"
+            android:text="Request money from Cowry Loans"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomCard_1"
+        style="@style/card"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
+        android:background="#F5FAF6"
+        app:layout_constraintTop_toBottomOf="@id/topCard_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertGuide">
+        <TextView
+            style="@style/titleStyle"
+            android:text="Pay bill"/>
+        <TextView
+            style="@style/descStyle"
+            android:layout_marginTop="12sp"
+            android:text="Zero transactions fees when you pay"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomCard_2"
+        style="@style/card"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:background="#FCEEC8"
+        app:layout_constraintTop_toBottomOf="@id/topCard_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertGuide">
+
+        <TextView
+            style="@style/titleStyle"
+            android:text="Buy airtime" />
+
+        <TextView
+            style="@style/descStyle"
+            android:layout_marginTop="12sp"
+            android:text="Top-up or Send airtime across Countries" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="296sp"
+        app:layout_constraintTop_toBottomOf="@id/bottomCard_2"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/endOfScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" End of Scroll "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/manrope_bold"
+        app:layout_constraintTop_toBottomOf="@id/space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertGuide"
+        style="@style/verticalGuideline"
+        app:layout_constraintGuide_percent="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

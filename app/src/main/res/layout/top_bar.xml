@@ -7,23 +7,24 @@
 
     <TextView
         android:id="@+id/greetingText"
-        style="@style/mainFont"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:text="Hi Klereng,"
         android:textSize="20sp"
+        android:fontFamily="@font/manrope"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/notifImage"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:contentDescription="Tombol Lonceng"
+        style="@style/buttonStyle"
         android:src="@drawable/icon_1"
+        android:background="@color/cardview_light_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:scaleType="fitStart" />
+        tools:scaleType="fitStart"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

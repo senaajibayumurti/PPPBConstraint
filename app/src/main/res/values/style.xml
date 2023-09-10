@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="mainFont">
-        <item name="fontFamily">@font/manrope_regular</item>
+    //Ngatur ImageButton
+    <style name="buttonStyle">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    
+    //Ngatur card
+    <style name="card">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    //Ngatur Title
+    <style name="titleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    //Ngatur Desc
+    <style name="descStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/manrope</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    //Ngatur Guideline
+    <style name="verticalGuideline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
     </style>
 </resources>
